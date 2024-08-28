@@ -1,0 +1,308 @@
+			* {
+				margin: 0%;
+				padding: 0%;
+				list-style: none;
+				text-decoration: none;
+				color: black;
+			}
+
+			ul {
+				position: absolute;
+				top: 7%;
+				left: 20%;
+				z-index: 100;
+			}
+
+			@font-face {
+				font-family: MD;
+				src: url(font/MD.ttf);
+			}
+
+			ul li {
+				float: left;
+				display: block;
+				width: 190px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				font-size: 40px;
+				background-color: rgba(250, 235, 215, 0.3);
+				margin-right: 60px;
+				font-family: MD;
+				border-radius: 20px;
+				transition: 1s ease;
+
+
+			}
+
+			li:nth-child(3) {
+				width: 220px;
+				height: 55px;
+				background-color: rgba(250, 235, 215, 0.8);
+			}
+
+			li:hover {
+				width: 220px;
+				height: 55px;
+				border: 5px solid black;
+				background-color: rgba(250, 235, 215, 1);
+			}
+
+			.banner {
+				height: 160%;
+				width: 100%;
+				position: absolute;
+				background-size: cover;
+				background-image: url(img/preview.jpg);
+				background-repeat: no-repeat;
+				z-index: -100;
+				opacity: 90%;
+			}
+
+			.musicbox1 {
+				height: 300px;
+				width: 1000px;
+				border-radius: 50px;
+				top: 20%;
+				left: 20%;
+				position: relative;
+				background: linear-gradient(rgba(112, 109, 58, 0.6), rgba(133, 89, 63, 0.6));
+				border: 10px solid snow;
+				z-index: 1000;
+				transition: 2s;
+
+
+			}
+
+			.musicbox2 {
+				height: 300px;
+				width: 1000px;
+				border-radius: 50px;
+				top: 30%;
+				left: 20%;
+				position: relative;
+				background: linear-gradient(rgba(112, 109, 58, 0.8), rgba(133, 89, 63, 0.8));
+				z-index: 1000;
+				border: 10px solid snow;
+				transition: 2s;
+
+			}
+
+			.musicbox3 {
+				height: 300px;
+				width: 1000px;
+				border-radius: 50px;
+				top: 38%;
+				left: 20%;
+				position: relative;
+				background: linear-gradient(rgba(112, 109, 58, 0.9), rgba(133, 89, 63, 0.9));
+				z-index: 1000;
+				border: 10px solid snow;
+				transition: 2s;
+			}
+			.musicbox1:hover{
+				background: linear-gradient(rgba(133, 89, 63, 0.9),rgba(112, 109, 58, 0.9) );
+				transform: scale(1.05, 1.05);
+				border-radius: 60px;
+				padding-left: 20px;
+				box-shadow: 15px 20px 35px black;
+				
+			}
+			.musicbox2:hover{
+				background: linear-gradient(rgba(133, 89, 63, 0.9),rgba(112, 109, 58, 0.9) );
+				transform: scale(1.05, 1.05);
+				border-radius: 60px;
+				padding-left: 20px;
+				box-shadow: 15px 20px 35px black;
+				
+			}
+			.musicbox3:hover{
+				background: linear-gradient(rgba(133, 89, 63, 0.9),rgba(112, 109, 58, 0.9) );
+				transform: scale(1.05, 1.05);
+				border-radius: 60px;
+				padding-left: 20px;
+				box-shadow: 15px 20px 35px black;
+				
+			}
+			.piaodang {
+				opacity: 50%;
+				top: 35%;
+				left: 10%;
+				position: relative;
+			}
+			
+			.chaqu {
+				opacity: 50%;
+				top: 15%;
+				left: 10%;
+				position: relative;
+			}
+			
+			.open {
+				opacity: 50%;
+				top: 35%;
+				left: 10%;
+				position: relative;
+			}
+			p{
+				font-size: 50px;
+				width: 50px;
+				position: relative;
+				text-align: center;
+				top: 15%;
+				color:gold;
+				font-family: MD;
+			}
+			
+			.leftbox1 {
+				background-image: url(img/9fif.jpg);
+				background-position: 10%;
+				z-index: 100;
+				background-size: cover;
+				left: 120px;
+				top: 10px;
+				position: absolute;
+				border-radius: 50%;
+				width: 100px;
+				height: 100px;
+				border:50px solid black;
+				box-shadow: 5px 5px 10px #000;
+				animation: zhuang 10s linear infinite; /*使用动画效果转起来*/
+			}
+			.leftbox2 {
+				background-image: url(img/OIP-C.jpg);
+				background-position: 85% 95%;
+				z-index: 100;
+				background-size: cover;
+				left: 120px;
+				top: 10px;
+				position: absolute;
+				border-radius: 50%;
+				width: 100px;
+				height: 100px;
+				border:50px solid black;
+				box-shadow: 5px 5px 15px #000;
+				animation: zhuang 20s linear infinite; /*使用动画效果转起来*/
+			}
+			.leftbox3 {
+				background-image: url(img/R-C.png);
+				background-position: 70% 70%;
+				z-index: 100;
+				background-size: cover;
+				left: 120px;
+				top: 10px;
+				position: absolute;
+				border-radius: 50%;
+				width: 100px;
+				height: 100px;
+				border:50px solid black;
+				box-shadow: 5px 5px 15px #000;
+				animation: zhuang 7s linear infinite; /*使用动画效果转起来*/
+			}
+			/* .geci1{
+				background-color:rgba(250, 235, 215, 0.2);
+				width: 400px;
+				height: 200px;
+				position: relative;
+				top: -40%;
+				left: 50%;
+				line-height: 33px;
+				font-family: MD;
+				font-size: 30px;
+				animation: scroll 5s linear infinite;
+				overflow: hidden auto;
+				color: #000;
+				box-shadow: 15px 20px 35px black;
+			}
+			.geci2{
+				background-color:rgba(250, 235, 215, 0.2);
+				width: 400px;
+				height: 200px;
+				position: relative;
+				top: -60%;
+				left: 50%;
+				line-height: 33px;
+				font-family: MD;
+				font-size: 30px;
+				animation: scroll 5s linear infinite;
+				overflow: hidden auto;
+				color: #000;
+				box-shadow: 15px 20px 35px black;
+			}
+			.geci3{
+				background-color:rgba(250, 235, 215, 0.2);
+				width: 400px;
+				height: 200px;
+				position: relative;
+				top: -40%;
+				left: 50%;
+				line-height: 33px;
+				font-family: MD;
+				font-size: 30px;
+				animation: scroll 5s linear infinite;
+				overflow: hidden auto;
+				color: #000;
+				box-shadow: 15px 20px 35px black;
+			} */
+			span{
+				color: snow;
+			}
+			.gun{
+				position: absolute;
+				top: 50px;
+				left: 50%;
+				width: 400px;
+				background-color:rgba(250, 235, 215, 0.2);
+				height: 200px;
+				
+				overflow: hidden ;
+			}
+			.wenzi1{
+				width: 100%;
+				color: black;
+				font-size: 30px;
+				animation: move 163s linear infinite;
+				/* transform: translateY(-105%); */
+				
+			}
+			.wenzi2:hover{
+				animation: move 113s linear infinite;
+
+			}
+			.wenzi3:hover{
+				animation: move 33s linear infinite;
+
+			}
+			.wenzi2{
+				width: 100%;
+				color: black;
+				font-size: 30px;
+				/* transform: translateY(-105%); */
+				
+			}
+			.wenzi3{
+				width: 100%;
+				color: black;
+				font-size: 30px;
+				/* transform: translateY(-105%); */
+				
+			}
+			/* 动画 */
+			@keyframes move {
+				from {
+					transform: translateY(0%);
+				}
+			
+				to {
+					transform: translateY(-105%);
+					
+				}
+			}
+			@keyframes zhuang{
+				from{
+					transform: rotate(0deg);
+				}
+				to{
+					transform: rotate(360deg);
+				}
+			}

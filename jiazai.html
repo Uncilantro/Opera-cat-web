@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-duration 属性</title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0%;
+        }
+    .top{
+        width:300px;
+        animation-name:mymove;             /*定义动画名称*/
+        animation-duration:5.5s;
+        position: absolute;/*定义动画时间*/
+        bottom:10px;      
+        }
+        .bottom{
+         width: 100%;
+         height: 100%;
+        }
+        body{
+            background-image: url('gif/R-C (1).gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+    @keyframes mymove{
+        from {transform:translate(0) rotateY(180deg);}
+        50% {transform:translate(1500px) rotateY(180deg);}
+        51% {transform:translate(1500px) rotateY(0deg);}
+        to {transform:translate(0) rotateY(0deg);}
+        }
+    </style>
+</head>
+<body>
+    <img src="gif/2ffe33cc51a8428c9ad42ba584dc7482.gif" class="top">
+    <!-- <img src="gif/R-C (1).gif" alt="" class="bottom"> -->
+</body>
+<script>
+    setTimeout(() => {
+        window.location.href = '02.html'
+    }, 5000);
+</script>
+</html>
+    

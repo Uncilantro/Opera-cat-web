@@ -1,0 +1,198 @@
+
+			* {
+				margin: 0%;
+				padding: 0%;
+				list-style: none;
+				text-decoration: none;
+				color: black;
+			}
+
+			ul {
+				position: absolute;
+				top: 7%;
+				left: 20%;
+				z-index: 100;
+			}
+
+			@font-face {
+				font-family: MD;
+				src: url(font/MD.ttf);
+			}
+
+			ul li {
+				float: left;
+				display: block;
+				width: 190px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				font-size: 40px;
+				background-color: rgba(250, 235, 215, 0.3);
+				margin-right: 60px;
+				font-family: MD;
+				border-radius: 20px;
+				transition: 1s ease;
+
+
+			}
+
+			li:nth-child(4) {
+				width: 220px;
+				height: 55px;
+				background-color: rgba(250, 235, 215, 0.8);
+			}
+
+			li:hover {
+				width: 220px;
+				height: 55px;
+                border: 5px solid black;
+				background-color: rgba(250, 235, 215, 1);
+			}
+
+			/* 			video {
+				position: absolute;
+
+				width: 100%;
+				height: 1000px;
+				object-fit: cover;
+				filter: sepia(40%);
+				opacity: 10%;
+			} */
+			.banner {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				background-size: cover;
+				background-image: url(img/20200329132257_ocwty.jpg);
+				background-repeat: no-repeat;
+				z-index: -100;
+				filter: sepia(20%);
+			}
+
+			form {
+				width: 450px;
+				height: 260px;
+				font-size: 30px;
+				padding-top: 80px;
+				padding-left: 80px;
+				position: relative;
+				left: 800px;
+				margin: 250px;
+				background: linear-gradient(rgba(71, 104, 132,0.9), rgba(159, 126, 89,0.6));
+				border-radius: 0px 0px 50px 50px;
+				border: 10px solid snow;
+				transition: 2s;
+				box-shadow: 15px 20px 15px dimgray;
+				
+			}
+			@font-face {
+				font-family: MD;
+				src: url(font/MD.ttf);
+			}
+			p span{
+				font-family: MD;
+				color:whitesmoke;
+			}
+			.puttext{
+				top: -50%;
+				left: 30%;
+				position: relative;
+			}
+			
+
+			form:hover {
+
+				border-radius: 50px 50px 80px 50px;
+				box-shadow: 15px 20px 35px dimgray;
+				background-color: rgba(255, 255, 255, 0.85);
+				transform: scale(1.1, 1.1);
+			}
+			img:hover{
+				transform: scale(1.2, 1.2);
+				filter: sepia(10%);
+				box-shadow: 15px 20px 35px dimgray;
+				
+			}
+
+			img {
+				width: 130px;
+				height: 130px;
+				display: inline-block;
+				border: 6px solid white;
+				left: -45px;
+				position: relative;
+				border-radius: 50%;
+				transition: 2s ease;
+				box-shadow: 15px 10px 25px dimgray;
+				animation: zhuang 10s linear infinite; /*使用动画效果转起来*/
+				
+			}
+			.btn01{
+				width: 180px;
+				height: 40PX;
+				border: 0ch;
+				box-shadow: 15px 10px 25px dimgray;
+				font-size:30px ;
+				text-align: center;
+				font-family: MD;
+				border-radius: 50px 50px 50px 50px;
+				transition: 1S;
+				opacity: 80%;
+				background-color: rgba(255, 233, 185, 0.4);
+				color: rgba(40, 44, 53, 1);
+				border: 3px solid snow;
+			}
+			.btn01:hover{
+				transform: scale(1.1, 1.2);
+				opacity: 90%;
+				color: rgba(70, 114, 143, 1);
+				border: 3px solid snow;
+			}
+			input{
+				width: 200PX;
+				height: 20PX;
+				border-radius: 50px 50px 50px 50px;
+				border: 5PX solid rgba(70, 114, 143, 0.7);
+				font-weight: 20PX;
+				transition: 1s;
+				text-indent: 20px;
+				
+			}
+			input:HOVER{
+				transform: scale(1.0, 1.2);
+				border: 5PX solid rgba(70, 114, 143, 0.9);
+			}
+			.welcome{
+				color: snow;
+				font-size: 140px;
+				font-weight: bold;
+				top: 25%;
+				background:  rgba(71, 104, 132,0.7);
+				position: absolute;
+				transition: 2s;
+				
+			}
+			.welcome:hover{
+				border-radius: 50px;
+				background: linear-gradient(rgba(159, 126, 89,0.9), rgba(71, 104, 132,0.9));
+			}
+			.wel-text{
+				color: snow;
+
+			}
+			.welcome:hover .wel-text{
+				color: rgba(255, 255, 255, 0.85);
+				font-size: 145px;
+				border-radius: 80px;
+				transition: all 2s;
+				transform: rotateY(-360deg) translateZ(0px);
+				/*  */
+			}
+			@keyframes zhuang{
+				from{
+					transform: rotate(0deg);
+				}
+				to{
+					transform: rotate(360deg);
+				}
+			}

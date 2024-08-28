@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+ul{
+    position: absolute;
+    top: 7%;
+    left: 20%;
+    z-index: 100;
+}
+@font-face {
+    font-family: MD;
+    src: url(font/MD.ttf);
+}
+        
+ul li{
+    float: left;
+    display: block;
+    width: 190px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    background-color:rgba(250, 235, 215,0.3);
+    margin-right: 60px;
+    font-family: MD;
+    border-radius: 20px;
+    transition: 1s ease;
+    
+    
+}
+
+li:nth-child(2)
+{
+    width: 220px;
+    height: 55px;
+    background-color:rgba(250, 235, 215,0.8);
+}
+li:hover{
+    width: 220px;
+    height: 55px;
+    border: 5px solid black;
+    background-color:rgba(250, 235, 215,1);
+}
+.videobox{
+	width: 1600px;
+	height: 1570px;
+	background-color: rgba(250, 235, 215,0.3);
+	margin: 2px auto;
+	border-radius: 100px;
+	border: 10px solid snow ;
+	position: relative;
+	top: 15%;
+	box-shadow: 15px 30px 25px dimgray;
+}
+.video01{
+	position: relative;
+    width: 1200px;
+	left: 20%;
+	border: 10px solid black;
+	top: 5%;
+	border-radius: 100px;
+    height: 400px;
+    object-fit: cover;
+    filter: sepia(40%);
+	opacity: 75%;
+	transition: 2s;
+	box-shadow: 15px 30px 25px dimgray;
+}
+.video02{
+	position: relative;
+    width: 1200px;
+	border: 10px solid black;
+	border-radius: 100px;
+	left: 20%;
+	top: 11%;
+    height: 400px;
+    object-fit: cover;
+    filter: sepia(40%);
+	opacity: 75%;
+	transition: 2s;
+	box-shadow: 15px 30px 25px dimgray;
+}
+.video03{
+	position: relative;
+    width: 1200px;
+	border: 10px solid black;
+	border-radius: 100px;
+	left: 20%;
+	top: 16%;
+    height: 400px;
+    object-fit: cover;
+    filter: sepia(40%);
+	opacity: 75%;
+	transition: 2s;
+	box-shadow: 15px 30px 25px dimgray;
+}
+.video01:hover{
+	transform: scale(1.0, 1.15);
+	opacity: 100%;
+	border: 10px solid snow;
+}
+.video02:hover{
+	transform: scale(1.0, 1.15);
+	opacity: 100%;
+	border: 10px solid snow;
+}
+.video03:hover{
+	transform: scale(1.0, 1.15);
+	opacity: 100%;
+	border: 10px solid snow;
+}
+
+p{
+	font-size: 200px;
+	background-color: rgba(225, 188, 139,0.6);
+	width: 250px;
+	height: 1000px;
+	text-align: center;
+	left: 2%;
+	border-radius: 50px;
+	font-family: MD;
+	color: #50371b;
+	top: 20%;
+	box-shadow: 25px 30px 25px black;
+	position: absolute;
+}
+.banner {
+    height: 200%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-image: url(img/20170304174721_iAfZu.jpeg);
+    background-repeat: no-repeat;
+    z-index: -100;
+    filter: sepia(10%);
+	
+}
